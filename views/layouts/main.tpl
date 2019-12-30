@@ -18,7 +18,24 @@
 				<li> <a href="index.php?p=carrerAdvice">carrer Advice </a> </li>
 				<li> <a href="index.php?p=CompanyProfiles">Company Profiles </a> </li>
 				<li> <a href="index.php?p=ContactUs">Contact us </a> </li>
-				<li> <a href="index.php?p=login">Login/Signup </a> </li>
+
+
+				{if $user_data}
+              <li> <a href="index.php?p=account">My Account</a> </a> </li>
+
+      
+     </li>
+   
+ <li> <a href="index.php?p=logout">Logout</a> </a> </li>
+
+    
+{else}
+   
+   <li> <a href="index.php?p=login">Login/Signup </a> </li>
+
+{/if}
+
+
 			</ul>
     </div>
 		</nav>

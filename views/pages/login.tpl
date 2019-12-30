@@ -4,6 +4,12 @@
 <div class="container">
   <form action="" method="post">
  
+ <div class="container">
+     {if $error} 
+        <div class="alert alert-danger" role="alert">
+            {$error}
+        </div>
+    {/if}
 
 <div class="form-group">
   <label for ="email"> Email address </label>
@@ -17,9 +23,14 @@
 </div>
 
 
+<button type="submit" class="btn btn-primary">Login</button>
+
+
+
  <a href="index.php?p=join" type = "submit" class ="btn btn-primary">SignUp </a> </button>
 
 
  </form>
 </div> 
 {/block}
+ 

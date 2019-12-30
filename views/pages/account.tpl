@@ -6,11 +6,13 @@
 
 <div class="container">
 <div class="col-4 col-md-4">
-
+<br><br>
 
 <div class="profile-photo">
-<img src="http://via.placeholder.com/300x300" />
+<img style="max-width: 100px;" src="./user-files/{$user_data.user_photo}" />
 </div>
+
+<p><a href="index.php?p=editprofileimage">Edit Image</a></p>
 
 
    </div>
